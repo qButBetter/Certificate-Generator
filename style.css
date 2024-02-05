@@ -3,3 +3,42 @@
     margin: 0 auto;
 }
 
+h1, h2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+form {
+    padding: 10em;
+    display: flex;
+    border: 2px black solid;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    flex-flow: column wrap;
+    width: fit-content;
+}
+
+.button-container {
+    padding-top: 1em;
+}
+
+input[type=text] {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+input[type=submit] {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #CB2D2D;
+    padding: 1.5em;
+    border-radius: 15%;
+}
+
+.input-container {
+    /* Will make input box disappear when button is pressed */
+}

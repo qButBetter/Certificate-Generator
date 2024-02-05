@@ -16,51 +16,58 @@
     <section class="input-container">
         <form>
 
-            <label for="name" id="fname">Name:</label><br>
-            <input type="text" id="name-input" value="name-input"><br>
+            <h2>Name</h2>
+
+            <input type="text" id="name-input" value="Name">
+
+            <!-- Fix radio buttons from going under! -->
 
             <h2>Certificate Presets</h2>
 
-            <label for="curtain">Curtain</label><br>
-            <input type="radio" id="curtain-input" value="curtain">
+            <label for="curtain">Curtain</label>
+            <input type="radio" id="curtain-input" name="presets" value="curtain">
 
-            <label for="jungle">Jungle</label><br>
-            <input type="radio" id="jungle-input" value="jungle">
+            <label for="jungle">Jungle</label>
+            <input type="radio" id="jungle-input" name="presets" value="jungle">
 
-            <label for="basement">Basement</label><br>
-            <input type="radio" id="basement-input" value="basement">
+            <label for="basement">Basement</label>
+            <input type="radio" id="basement-input" name="presets" value="basement">
 
             <h2>Certified In?</h2>
 
-            <label for="tiktok">TikTok Shop "Entrepreneur"</label><br>
-            <input type="radio" id="tiktok-input" value="tiktok">
+            <label for="tiktok">TikTok Shop "Entrepreneur"</label>
+            <input type="radio" id="tiktok-input" name="certified" value="tiktok">
 
-            <label for="brainrot">Brain Rot Spreader</label><br>
-            <input type="radio" id="brainrot-input" value="brainrot">
+            <label for="brainrot">Brain Rot Spreader</label>
+            <input type="radio" id="brainrot-input" name="certified" value="brainrot">
 
-            <label for="literallyhim">Being literally him</label><br>
-            <input type="radio" id="him-input" value="him">
+            <label for="literallyhim">Being literally him</label>
+            <input type="radio" id="him-input" name="certified" value="him">
 
-            <label for="foryou">For-You page Reposter</label><br>
-            <input type="radio" id="foryou-input" value="foryou">
+            <label for="foryou">For-You page Reposter</label>
+            <input type="radio" id="foryou-input" name="certified" value="foryou">
 
-            <label for="quagsire">Shiny Quagsire Handler</label><br>
-            <input type="radio" id="quagsire-input" value="quagsire">
+            <label for="quagsire">Shiny Quagsire Handler</label>
+            <input type="radio" id="quagsire-input" name="certified" value="quagsire">
+
+            <label for="sigma">Sigma</label>
+            <input type="radio" id="sigma-input" name="certified" value="sigma">
+
+            <label for="loner">Loner</label>
+            <input type="radio" id="loner-input" name="certified" value="loner">
 
             <h2>Certified By?</h2>
 
-            <input type="text" id="boss-input" value="boss-input">
+            <input type="text" id="boss-input" value="Signed by?">
 
-            <input type="submit" value="submit">
-            
+            <section class="button-container">
+                <input type="submit" value="Generate Certificate">
+            </section>
+
         </form>
     </section>
 
-    <section class="button-container">
 
-        <button>Generate Certificate</button>
-
-    </section>
 
 
     <section class="certificate-container">
