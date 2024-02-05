@@ -42,3 +42,5 @@ input[type=submit] {
 .input-container {
     /* Will make input box disappear when button is pressed */
 }
+
+/* Add media query for certificate container with print */
