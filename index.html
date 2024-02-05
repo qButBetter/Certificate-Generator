@@ -1,14 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script></script>
+    <title>Certificate Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
+
 <body>
-    
-<!-- Need a form -->
+
+    <h1>Certificate Generator of Truth and Destiny</h1>
+
+    <section class="input-container">
+        <form>
+
+            <label for="name" id="fname">Name:</label><br>
+            <input type="text" id="name-input" value="name-input"><br>
+
+            <h2>Certificate Presets</h2>
+
+            <label for="curtain">Curtain</label><br>
+            <input type="radio" id="curtain-input" value="curtain">
+
+            <label for="jungle">Jungle</label><br>
+            <input type="radio" id="jungle-input" value="jungle">
+
+            <label for="basement">Basement</label><br>
+            <input type="radio" id="basement-input" value="basement">
+
+            <h2>Certified In?</h2>
+
+            <label for="tiktok">TikTok Shop "Entrepreneur"</label><br>
+            <input type="radio" id="tiktok-input" value="tiktok">
+
+            <label for="brainrot">Brain Rot Spreader</label><br>
+            <input type="radio" id="brainrot-input" value="brainrot">
+
+            <label for="literallyhim">Being literally him</label><br>
+            <input type="radio" id="him-input" value="him">
+
+            <label for="foryou">For-You page Reposter</label><br>
+            <input type="radio" id="foryou-input" value="foryou">
+
+            <label for="quagsire">Shiny Quagsire Handler</label><br>
+            <input type="radio" id="quagsire-input" value="quagsire">
+
+            <h2>Certified By?</h2>
+
+            <input type="text" id="boss-input" value="boss-input">
+
+            <input type="submit" value="submit">
+            
+        </form>
+    </section>
+
+    <section class="button-container">
+
+        <button>Generate Certificate</button>
+
+    </section>
+
+
+    <section class="certificate-container">
+
+
+
+    </section>
 
 </body>
+
 </html>
