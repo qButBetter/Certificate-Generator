@@ -40,7 +40,12 @@ input[type=submit] {
 }
 
 input[type=radio] {
+    padding-right: 1.5em;
+}
+
+div {
     display: flex;
+    flex-flow: row-reverse wrap;
 }
 
 .input-container {
@@ -54,4 +59,5 @@ input[type=radio] {
     width: 100%;
     /* Make it visible when button press */
 }
+
 /* Add media query for certificate container with print */
