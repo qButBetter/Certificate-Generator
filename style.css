@@ -39,8 +39,19 @@ input[type=submit] {
     border-radius: 15%;
 }
 
-.input-container {
-    /* Will make input box disappear when button is pressed */
+input[type=radio] {
+    display: flex;
 }
 
+.input-container {
+    display: flex;
+    justify-content: center;
+    /* Make it invisible when button press */
+}
+
+.certificate-container {
+    border: 2px black solid;
+    width: 100%;
+    /* Make it visible when button press */
+}
 /* Add media query for certificate container with print */
