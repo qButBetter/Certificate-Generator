@@ -40,7 +40,7 @@ input[type=submit] {
 }
 
 input[type=radio] {
-    padding-right: 1.5em;
+    margin-right: 0.5em;
 }
 
 div {
@@ -60,4 +60,7 @@ div {
     /* Make it visible when button press */
 }
 
+@media print {
+    
+}
 /* Add media query for certificate container with print */
