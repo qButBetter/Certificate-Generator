@@ -1,9 +1,13 @@
+/* Font for Title of Certificate */
+  @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Cookie&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0 auto;
 }
 
-h1, h2 {
+h1,
+h2 {
     display: flex;
     justify-content: center;
     padding-bottom: 1em;
@@ -57,10 +61,120 @@ div {
 .certificate-container {
     border: 2px black solid;
     width: 100%;
+    height: 100%;
     /* Make it visible when button press */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.certificate-container h2 {
+    font-family: 'Cookie';
+    font-size: 4em;
+}
+
+.line {
+    background-color: black;
+    width: 20em;
+    height: 0.1em;
+}
+
+.name-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    margin-bottom: 5em;
+}
+
+.name-container h3 {
+    font-size: 4em;
+    text-align: center;
+}
+
+.certify-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    margin-bottom: 2em;
+}
+
+.certify-container h4 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.certify-container div {
+    width: 30em;
+}
+
+.bottom-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-container div {
+    width: 5em;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 33%;
+}
+
+/* Backgrounds & Seals of Certificates */
+.basement {
+    background-image: url(Background-Imgs/basement.jpg);
+    background-size: contain;
+    background-repeat: none;
+}
+
+/* Seal of approval */
+.basement a {
+    content: "";
+    /* Define width / height */
+    width: 33%;
+    height: 100%;
+    background-image: url(Seal-Imgs/quagsire-approval.png);
+}
+
+.curtain {
+    background-image: url(Background-Imgs/curtain.gif);
+    background-size: contain;
+    background-repeat: none;
+}
+
+/* Seal of approval */
+.curtain a {
+    content: "";
+    /* Define width / height */
+    width: 33%;
+    height: 100%;
+    background-image: url(Seal-Imgs/phil-approval.png);
+}
+
+.obscure {
+    background-image: url(Background-Imgs/obscure.jpg);
+    background-size: contain;
+    background-repeat: none;
+}
+
+/* Seal of approval */
+.obscure a {
+    content: "";
+    /* Define width / height */
+    width: 33%;
+    height: 100%;
+    background-image: url(Seal-Imgs/burger-approval.png);
 }
 
 @media print {
-    
+
 }
+
 /* Add media query for certificate container with print */

@@ -7,7 +7,6 @@
     <title>Certificate Generator</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <script>//Will call runner here</script>
 </head>
 
 <body>
@@ -21,7 +20,7 @@
 
             <input type="text" id="name-input" value="Name">
 
-           <!-- Based on the PRESET input, it will build a section with the class name with all the attributes tied to it, then it'll insert the things into the "Name" place & so-forth -->
+            <!-- Based on the PRESET input, it will build a section with the class name with all the attributes tied to it, then it'll insert the things into the "Name" place & so-forth -->
 
             <h2>Certificate Presets</h2>
 
@@ -82,7 +81,7 @@
             <input type="text" id="boss-input" value="Signed by?">
 
             <section class="button-container">
-                <input type="submit" value="Generate Certificate">
+                <button type="submit" onlick="">Generate Certificate!</button>
             </section>
 
         </form>
@@ -91,21 +90,36 @@
 
 
 
-    <section class="certificate-container">
+    <section class="certificate-container curtain">
 
         <h2>Certificate of Completion</h2>
 
-        <h3>Name</h3>
+        <section class="name-container">
+            <h3>Name</h3>
+            <div class="line"></div>
+        </section>
 
-        <h4>Certified In?</h4>
+        <section class="certify-container">
+            <h4>Certified In?</h4>
+            <div class="line"></div>
+        </section>
 
-        <div class="line"></div>
-        <h4>Date</h4>
+        <section class="bottom-container">
 
+            <section class="row">
+                <div class="line"></div>
+                <h4>Date</h4>
+            </section>
 
-        
-        <div class="line"></div>
-        <h4>Signature</h4>
+            <!--Put logo placeholder here  -->
+            <a id="logo" href=""></a>
+
+            <section class="row">
+                <div class="line"></div>
+                <h4>Signature</h4>
+            </section>
+
+        </section>
 
 
 
