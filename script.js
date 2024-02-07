@@ -6,17 +6,17 @@ const objCertIn = {
 
     brainrot: {
         title: 'Professional Brain Rot Spreader',
-        desc: 'Watched so much brain rot on social media \'Ironically\' that they have become brain rot themselves.'
+        desc: 'Watched so much brain rot on social media \'Ironically\' that they have become the imbodiment brain rot themselves.'
     },
 
     him: {
         title: 'Being literally him',
-        desc: 'Consumed so much of their favorite niche that they actually think they are that person from their niche.'
+        desc: 'Consumed so much of their favorite media that they actually think they are that person from their media.'
     },
 
     foryou: {
         title: 'For-You page resposter',
-        desc: 'Resposts everything on their For-You page so much that everyone\'s For-You page is just theirs'
+        desc: 'Resposts everything on their For-You page so much that everyone\'s For-You page is just theirs.'
     },
 
     quagsire: {
@@ -26,7 +26,7 @@ const objCertIn = {
 
     sigma: {
         title: 'A Sigma',
-        desc: 'Followed sigma rules for 5 years. Once complete, this award is mailed by Patrick Bateman himself.'
+        desc: 'Followed the sigma grindset for 5 years. Once complete, this award is mailed in by Patrick Bateman himself.'
     },
 
     loner: {
@@ -103,5 +103,7 @@ function runner(objCertify, objPreset) {
             //Changes certification to being a loner
             break;
     }
+
+    // Insert name, date, signature input into the HTML after everything else is constructed.
 
 }
