@@ -49,61 +49,111 @@ const objPresetIn = {
     }
 }
 
-
-function submit(objCertify, objPreset) {
-
-    // Constructs object thru parameters.
-    this.name = nameInput;
-    this.preset = presetInput;
-    this.certification = certifyInput;
-    this.signer = signedInput;
-
-    //Changes background based on input
-    switch (objPreset.preset) {
-        case "curtain":
-            // Change background to curtains
-            break;
-
-        case "obscure":
-            // Change background to obscure fast food
-            break;
-
-        case "basement":
-            // Change background to basement
-            break;
+// Runs once Document is loaded
+document.addEventListener("DOMContentLoaded", function () {
+    // check for buttons exist
+    if ( document.querySelectorAll('.button') !== null) {
+        let buttons = document.querySelectorAll('.button');
+        buttons.forEach(button => button.addEventListener('submit', processForm))
     }
 
-    //Changes certification based on input
-    switch (objCertify.certified) {
-        case "tiktok":
-            //Changes certification to tiktok
-            break;
+    // process form Data
+    document.getElementById("myForm").addEventListener('submit', function (input) {
+        input.preventDefault();
 
-        case "brainrot":
-            //Changes certification to brainrot
-            break;
+        console.log(input.target);
+      
+        var formData = new FormData(input.target);
+        formData = Object.fromEntries(formData);
+        console.log(formData.name);
 
-        case "him":
-            //Changes certification to being him
-            break;
+        // Gets presets and certification
+        let presetIn = formData.presets;
+        let certifyIn = formData.certified;
 
-        case "foryou":
-            //Changes certification to foryou page reposter
-            break;
+        // Writes name and signature to the page
+        let nameElement = document.getElementById('name');
+        let sigElement = document.getElementById('signature');
+        // Grabs date and converts it to a string
+        // let dateElement = Date(now);
 
-        case "quagsire":
-            //Changes certification to shiny quagsire
-            break;
+        nameElement.innerText = formData.name;
+        sigElement.innerText = formData.signature;
+        dateElement.innerText = formData.date;
+      });
+    // Log readiness to console
+    console.log("Ready");
+});
 
-        case "sigma":
-            //Changes certification to being a sigma
-            break;
 
-        case "loner":
-            //Changes certification to being a loner
-            break;
-    }
+// function submit(input) {
+//     input.preventDefault();
 
-    // Insert name, date, signature input into the HTML after everything else is constructed.
+//     if (document.querySelectorAll('.button') !== null) {
+//         let button = document.querySelectorAll('.button');
+//         button.forEach(button => button.addEventListener('click', submit));
+//     }
 
-}
+//     document.getElementById('myForm').addEventListener('click', submit(input));
+
+//     var certData = new FormData(input.target);
+//     certData = Object.fromEntries(certData);
+
+//     let nameHtml = document.getElementById('name');
+//     let sigHtml = document.getElementById('signature');
+//     let dateHtml = 0;
+
+//     // Writes the input on the certificate
+//     nameHtml.innerText = certData.name;
+//     sigHtml.innerText = certData.signature;
+//     dateHtml = certData.date;
+
+//     // Insert name, date, signature input into the HTML after everything else is constructed.
+
+// }
+
+    // //Changes background based on input
+    // switch (objPreset.preset) {
+    //     case "curtain":
+    //         // Change background to curtains
+    //         break;
+
+    //     case "obscure":
+    //         // Change background to obscure fast food
+    //         break;
+
+    //     case "basement":
+    //         // Change background to basement
+    //         break;
+    // }
+
+    // //Changes certification based on input
+    // switch (objCertify.certified) {
+    //     case "tiktok":
+    //         //Changes certification to tiktok
+    //         break;
+
+    //     case "brainrot":
+    //         //Changes certification to brainrot
+    //         break;
+
+    //     case "him":
+    //         //Changes certification to being him
+    //         break;
+
+    //     case "foryou":
+    //         //Changes certification to foryou page reposter
+    //         break;
+
+    //     case "quagsire":
+    //         //Changes certification to shiny quagsire
+    //         break;
+
+    //     case "sigma":
+    //         //Changes certification to being a sigma
+    //         break;
+
+    //     case "loner":
+    //         //Changes certification to being a loner
+    //         break;
+    // }

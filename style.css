@@ -113,10 +113,15 @@ div {
 .bottom-container {
     display: flex;
     justify-content: space-between;
+    flex-flow: row wrap;
 }
 
 .bottom-container div {
-    width: 5em;
+    width: 10em;
+}
+
+#signature {
+    font-family: 'Cookie';
 }
 
 .row {
@@ -124,7 +129,6 @@ div {
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
-    width: 33%;
 }
 
 /* Backgrounds & Seals of Certificates */

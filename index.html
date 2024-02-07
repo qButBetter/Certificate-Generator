@@ -14,11 +14,11 @@
     <h1>Certificate Generator of Truth and Destiny</h1>
 
     <section class="input-container">
-        <form>
+        <form id="myForm">
 
             <h2>Name</h2>
 
-            <input type="text" id="name-input" placeholder="Name">
+            <input type="text" id="name-input" name="name" placeholder="Name">
 
             <!-- Based on the PRESET input, it will build a section with the class name with all the attributes tied to it, then it'll insert the things into the "Name" place & so-forth -->
 
@@ -78,10 +78,10 @@
 
             <h2>Certified By?</h2>
 
-            <input type="text" id="boss-input" placeholder="Signed by?">
+            <input type="text" id="signature-input" name="signature" placeholder="Signed by?">
 
             <section class="button-container">
-                <button type="submit" onlick="">Generate Certificate!</button>
+                <input type="submit">
             </section>
 
         </form>
@@ -95,18 +95,20 @@
         <h2>Certificate of Completion</h2>
 
         <section class="name-container">
-            <h3>Name</h3>
+            <h3 id="name">Name</h3>
             <div class="line"></div>
         </section>
 
         <section class="certify-container">
-            <h4>Certified In?</h4>
+            <h4 id="certify">Certified In?</h4>
             <div class="line"></div>
+            <h3 id="desc">Description</h3>
         </section>
 
         <section class="bottom-container">
 
             <section class="row">
+                <h3 id="date">The date</h3>
                 <div class="line"></div>
                 <h4>Date</h4>
             </section>
@@ -115,6 +117,7 @@
             <a id="logo" href=""></a>
 
             <section class="row">
+                <h3 id="signature">The Signature</h3>
                 <div class="line"></div>
                 <h4>Signature</h4>
             </section>
