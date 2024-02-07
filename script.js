@@ -50,7 +50,7 @@ const objPresetIn = {
 }
 
 
-function runner(objCertify, objPreset) {
+function submit(objCertify, objPreset) {
 
     // Constructs object thru parameters.
     this.name = nameInput;
