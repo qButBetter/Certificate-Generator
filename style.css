@@ -36,9 +36,10 @@ button {
     color: white;
     padding-left: 5em;
     padding-right: 5em;
-    padding-top: 3em;
-    padding-bottom: 3em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     border-radius: 15%;
+    font-size: 2em;
 }
 
 input[type=text] {
