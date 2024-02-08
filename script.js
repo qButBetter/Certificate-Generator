@@ -136,7 +136,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 containerElement.classList.add('basement');
                 break;
         }
-        window.print();
     });
     // Log readiness to console
     console.log("Ready");

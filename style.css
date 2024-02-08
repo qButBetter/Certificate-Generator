@@ -28,6 +28,19 @@ form {
     padding-top: 1em;
 }
 
+button {
+    margin-top: 1em;
+    background-color: #CB2D2D;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    border-radius: 15%;
+}
+
 input[type=text] {
     display: flex;
     justify-content: center;
@@ -197,5 +210,9 @@ h3#desc {
 
     .certificate-container {
         width: 100%;
+    }
+
+    button {
+        display: none;
     }
 }
