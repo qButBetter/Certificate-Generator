@@ -53,34 +53,60 @@ document.addEventListener("DOMContentLoaded", function () {
         var formData = new FormData(input.target);
         formData = Object.fromEntries(formData);
 
+                // Gets presets and certification and writes to page
+                let presetIn = formData.presets;
+        
+        
+                // Writes name and signature to the page
+                let nameElement = document.getElementById('name');
+                let sigElement = document.getElementById('signature');
+                // Grabs date and converts it to a string
+                let date = new Date().toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"}) ;
+                let dateElement = document.getElementById('date');
+        
+                nameElement.innerText = formData.name;
+                sigElement.innerText = formData.signature;
+                dateElement.innerText = date;
+
+                // Gets the Certification and the desc and adds it to the certificate
+                let descElement = document.getElementById('desc');
+                let certElement = document.getElementById('certify');
+
         // Adds desc to page depending on what they're certified in
-        switch (certifyIn) {
+        switch (formData.certified) {
             case "tiktok":
-                // Action
+                certElement.innerText = objCert.tiktok.title;
+                descElement.innerText = objCert.tiktok.desc;
                 break;
 
             case "brainrot":
-                // Action
+                certElement.innerText = objCert.brainrot.title;
+                descElement.innerText = objCert.brainrot.desc;
                 break;
 
             case "him":
-                // Action
+                certElement.innerText = objCert.him.title;
+                descElement.innerText = objCert.him.desc;
                 break;
 
             case "foryou":
-                // Action
+                certElement.innerText = objCert.foryou.title;
+                descElement.innerText = objCert.foryou.desc;
                 break;
 
             case "quagsire":
-                // Action
+                certElement.innerText = objCert.quagsire.title;
+                descElement.innerText = objCert.quagsire.desc;
                 break;
 
             case "sigma":
-                // Action
+                certElement.innerText = objCert.sigma.title;
+                descElement.innerText = objCert.sigma.desc;
                 break;
 
             case "loner":
-                // Action
+                certElement.innerText = objCert.loner.title;
+                descElement.innerText = objCert.loner.desc;
                 break;
         }
 
@@ -99,20 +125,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 break;
         }
 
-        // Gets presets and certification and writes to page
-        let presetIn = formData.presets;
-        let certifyIn = formData.certified;
-
-
-        // Writes name and signature to the page
-        let nameElement = document.getElementById('name');
-        let sigElement = document.getElementById('signature');
-        // Grabs date and converts it to a string
-        let dateElement = document.getElementById('date');
-
-        nameElement.innerText = formData.name;
-        sigElement.innerText = formData.signature;
-        dateElement.innerText = formData.date;
     });
     // Log readiness to console
     console.log("Ready");

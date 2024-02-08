@@ -131,6 +131,12 @@ div {
     flex-flow: column wrap;
 }
 
+h3#desc {
+    width: 50%;
+    text-align: center;
+    font-style: italic;
+}
+
 /* Backgrounds & Seals of Certificates */
 .basement {
     background-image: url(Background-Imgs/basement.jpg);
