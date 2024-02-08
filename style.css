@@ -120,14 +120,31 @@ div {
     width: 10em;
 }
 
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 40%;
+    /* Change this! */
+    margin: 0 auto;
+}
+
 #signature {
     font-family: 'Cookie';
 }
 
-.row {
+.start {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+}
+
+.end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     flex-flow: column wrap;
 }
 
@@ -142,45 +159,20 @@ h3#desc {
     background-image: url(Background-Imgs/basement.jpg);
     background-size: contain;
     background-repeat: none;
-}
-
-/* Seal of approval */
-.basement a {
-    content: "";
-    /* Define width / height */
-    width: 33%;
-    height: 100%;
-    background-image: url(Seal-Imgs/quagsire-approval.png);
+    color: white;
 }
 
 .curtain {
     background-image: url(Background-Imgs/curtain.gif);
     background-size: contain;
     background-repeat: none;
-}
-
-/* Seal of approval */
-.curtain a {
-    content: "";
-    /* Define width / height */
-    width: 33%;
-    height: 100%;
-    background-image: url(Seal-Imgs/phil-approval.png);
+    color: white;
 }
 
 .obscure {
     background-image: url(Background-Imgs/obscure.jpg);
     background-size: contain;
     background-repeat: none;
-}
-
-/* Seal of approval */
-.obscure a {
-    content: "";
-    /* Define width / height */
-    width: 33%;
-    height: 100%;
-    background-image: url(Seal-Imgs/burger-approval.png);
 }
 
 @media print {
