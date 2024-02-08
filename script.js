@@ -1,5 +1,7 @@
 // Runs once Document is loaded
 document.addEventListener("DOMContentLoaded", function () {
+alert("When printing, change display background image on, print as landscape, and print with color!");
+
     // check for buttons exist
     if (document.querySelectorAll('.button') !== null) {
         let buttons = document.querySelectorAll('.button');
