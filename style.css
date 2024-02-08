@@ -55,14 +55,12 @@ div {
 .input-container {
     display: flex;
     justify-content: center;
-    /* Make it invisible when button press */
 }
 
 .certificate-container {
     border: 2px black solid;
     width: 100%;
     height: 100%;
-    /* Make it visible when button press */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,26 +123,31 @@ div {
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
-    width: 40%;
+    width: 20%;
     /* Change this! */
-    margin: 0 auto;
+    margin: 0 0;
 }
 
 #signature {
     font-family: 'Cookie';
+    font-size: 3em;
+}
+
+#date {
+    font-size: 2em;
 }
 
 .start {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     flex-flow: column wrap;
 }
 
 .end {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     flex-flow: column wrap;
 }
 
@@ -160,23 +163,35 @@ h3#desc {
     background-size: contain;
     background-repeat: none;
     color: white;
+    text-shadow: 0.2em 0 black;
 }
 
 .curtain {
     background-image: url(Background-Imgs/curtain.gif);
     background-size: contain;
     background-repeat: none;
+    color: black;
+}
+
+.curtain h2 {
     color: white;
+    text-shadow: 0.1em 0 black;
 }
 
 .obscure {
     background-image: url(Background-Imgs/obscure.jpg);
     background-size: contain;
     background-repeat: none;
+    color: white;
+    text-shadow: 0.2em 0 black;
 }
 
 @media print {
+    .input-container {
+        display: none;
+    }
 
+    h1 {
+        display: none;
+    }
 }
-
-/* Add media query for certificate container with print */

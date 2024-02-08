@@ -34,13 +34,13 @@ document.addEventListener("DOMContentLoaded", function () {
         },
 
         sigma: {
-            title: 'A Sigma',
+            title: 'Certified Sigma',
             desc: 'Followed the sigma grindset for 5 years. Once complete, this award is mailed in by Patrick Bateman himself.'
         },
 
-        loner: {
-            title: 'A Loner',
-            desc: '\"I don\'t need anyone!\" says this person. Always stayed away from functions and never socialized outside of work/school. ;-;'
+        forklift: {
+            title: 'Forklift Certified',
+            desc: 'Spent 2 seconds scrolling on the auto section on Instagram and decided this was their passion. \nF O R K L I F T.'
         }
     }
 
@@ -104,27 +104,35 @@ document.addEventListener("DOMContentLoaded", function () {
                 descElement.innerText = objCert.sigma.desc;
                 break;
 
-            case "loner":
-                certElement.innerText = objCert.loner.title;
-                descElement.innerText = objCert.loner.desc;
+            case "forklift":
+                certElement.innerText = objCert.forklift.title;
+                descElement.innerText = objCert.forklift.desc;
                 break;
         }
 
         // Changes class of certificate-container depending on what preset they choose
-        switch (presetIn) {
+        let containerElement = document.getElementById('certificate-container');
+
+        console.log(formData.presets);
+        switch (formData.presets) {
             case "curtain":
-                // Action
+                document.getElementById("logo").src="Seal-imgs/phil-approval.png";
+                // Add the class name to certificate-container
+                containerElement.classList.add('curtain');
                 break;
 
             case "obscure":
-                // Action
+                document.getElementById("logo").src="Seal-imgs/burger-approval.png";
+                // Add the class name to certificate-container
+                containerElement.classList.add('obscure');
                 break;
 
             case "basement":
-                // Action
+                document.getElementById("logo").src="Seal-imgs/quagsire-approval.png";
+                // Add the class name to certificate-container
+                containerElement.classList.add('basement');
                 break;
         }
-
     });
     // Log readiness to console
     console.log("Ready");
