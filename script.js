@@ -135,6 +135,7 @@ alert("When printing, change display background image on, print as landscape, an
                 containerElement.classList.add('basement');
                 break;
         }
+        window.print();
     });
     // Log readiness to console
     console.log("Ready");
