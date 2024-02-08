@@ -1,6 +1,7 @@
 // Runs once Document is loaded
 document.addEventListener("DOMContentLoaded", function () {
-alert("When printing, change display background image on, print as landscape, and print with color!");
+
+    alert("When printing, change display background image on, print as landscape, and print with color!");
 
     // check for buttons exist
     if (document.querySelectorAll('.button') !== null) {
@@ -55,24 +56,24 @@ alert("When printing, change display background image on, print as landscape, an
         var formData = new FormData(input.target);
         formData = Object.fromEntries(formData);
 
-                // Gets presets and certification and writes to page
-                let presetIn = formData.presets;
-        
-        
-                // Writes name and signature to the page
-                let nameElement = document.getElementById('name');
-                let sigElement = document.getElementById('signature');
-                // Grabs date and converts it to a string
-                let date = new Date().toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"}) ;
-                let dateElement = document.getElementById('date');
-        
-                nameElement.innerText = formData.name;
-                sigElement.innerText = formData.signature;
-                dateElement.innerText = date;
+        // Gets presets and certification and writes to page
+        let presetIn = formData.presets;
 
-                // Gets the Certification and the desc and adds it to the certificate
-                let descElement = document.getElementById('desc');
-                let certElement = document.getElementById('certify');
+
+        // Writes name and signature to the page
+        let nameElement = document.getElementById('name');
+        let sigElement = document.getElementById('signature');
+        // Grabs date and converts it to a string
+        let date = new Date().toLocaleDateString('en-us', { year: "numeric", month: "short", day: "numeric" });
+        let dateElement = document.getElementById('date');
+
+        nameElement.innerText = formData.name;
+        sigElement.innerText = formData.signature;
+        dateElement.innerText = date;
+
+        // Gets the Certification and the desc and adds it to the certificate
+        let descElement = document.getElementById('desc');
+        let certElement = document.getElementById('certify');
 
         // Adds desc to page depending on what they're certified in
         switch (formData.certified) {
@@ -118,25 +119,31 @@ alert("When printing, change display background image on, print as landscape, an
         console.log(formData.presets);
         switch (formData.presets) {
             case "curtain":
-                document.getElementById("logo").src="Seal-imgs/phil-approval.png";
+                document.getElementById("logo").src = "Seal-imgs/phil-approval.png";
                 // Add the class name to certificate-container
                 containerElement.classList.add('curtain');
                 break;
 
             case "obscure":
-                document.getElementById("logo").src="Seal-imgs/burger-approval.png";
+                document.getElementById("logo").src = "Seal-imgs/burger-approval.png";
                 // Add the class name to certificate-container
                 containerElement.classList.add('obscure');
                 break;
 
             case "basement":
-                document.getElementById("logo").src="Seal-imgs/quagsire-approval.png";
+                document.getElementById("logo").src = "Seal-imgs/quagsire-approval.png";
                 // Add the class name to certificate-container
                 containerElement.classList.add('basement');
                 break;
         }
+
         window.print();
+
     });
     // Log readiness to console
     console.log("Ready");
+
+
 });
+
+
