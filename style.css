@@ -179,6 +179,10 @@ h3#desc {
     text-shadow: 0.2em 0 black;
 }
 
+.basement div {
+    background-color: white;
+}
+
 .curtain {
     background-image: url(Background-Imgs/curtain.gif);
     background-size: contain;
