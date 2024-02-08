@@ -194,4 +194,8 @@ h3#desc {
     h1 {
         display: none;
     }
+
+    .certificate-container {
+        width: 100%;
+    }
 }
